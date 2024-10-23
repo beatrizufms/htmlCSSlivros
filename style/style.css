@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+/*unidade de medida REM: adapta o layout da página de acordo com as configurações do navegador*/
+
+/*padding: responsável por definir a distância entre um conteúdo e suas bordas*/
+
+/*Flexbox é uma ferramenta do CSS que visa organizar os elementos de uma página HTML de forma dinâmica e mantendo um layout flexível*/
+
+/*midia queries: muda a disposição dos elementos da tela, seguindo um cretério pré-estabelecido*/
+
+/*responsidade: quando o site adapta o tamanho de suas áginas de acordo com o tamanho da tela do dispositivo*/
+
+/*variaváveis "globais"
+:root = escopo global de um código
+*/
+:root {
+    --cor-fundo: rgb(3, 39, 3);
+    --cor-titulo: goldenrod;
+    --cor-texto: rgb(182, 137, 25);
+    --cor-texto-botao: rgb(187, 142, 28);
+    --cor-texto-rodape: rgb(3, 39, 3);
+    --cor-fundo-rodape: rgb(182, 137, 25);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-fundo);
+    color: rgb(182, 137, 25);
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho_menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho_menu_link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-texto);
+    text-decoration: none;
+}
+
+.principal {
+    padding: 1% 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+h1 {
+    font-weight: bold; /* colocar em negrito*/
+}
+a {
+    color: var(--cor-titulo);
+}
+
+.principal_conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.principal_conteudo_titulo {
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Krona One', sans-serif;
+}
+
+.principal_conteudo_titulo_2 {
+    font-size: 1.88rem;
+    text-align: center;
+    font-family: 'Krona One', sans-serif;
+}
+
+.principal_conteudo_texto {
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.principal_links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.principal_links_link {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px dotted var(--cor-texto); /*borda pontilhada (dotted)*/
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-texto-botao);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.principal_links_link:hover { /*muda a cor do botão ao passar o cursor sobre ele*/
+    background-color: rgb(10, 59, 10);
+}
+
+.principal_links_link img {
+    max-width: 30px;
+    max-height: 30px;
+    width: auto;
+    height: auto;
+
+}
+
+.princial_img {
+    width: 50%;
+}
+
+.rodape {
+    padding: 19px;
+    background-color: var(--cor-fundo-rodape);
+    color:var(--cor-texto-rodape);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 8%;
+    }
+
+    .cabecalho_menu {
+        justify-content: center;
+    }
+
+    .principal {
+        flex-direction: column-reverse;
+        padding: 1% 5%;
+    }
+
+    .principal_conteudo {
+        width: auto;
+    }
+}
+
