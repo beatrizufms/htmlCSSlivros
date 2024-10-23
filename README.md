@@ -10,6 +10,6 @@
 
 ## Feito por:
 
-### Joana Santos
+### Beatriz Lima
 
-### Linkedin: https://www.linkedin.com/school/aluracursos/
+### Linkedin: https://www.linkedin.com/in/beatriz-l-4aa569142
